@@ -1,0 +1,3924 @@
+{
+  "checkedDate": "2026-10-22",
+  "markets": [
+    {
+      "id": "shfe-gold",
+      "name": "上期所 · 黄金",
+      "code": "SHFE / AU",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "precious": true,
+      "china": true,
+      "color": "#F2C66D",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "21:00",
+          "end": "02:30",
+          "night": true,
+          "days": "12345"
+        }
+      ],
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "note": "日盘含10:15—10:30休息及午休。夜盘按开始日判断，周五夜盘延续至周六；节前取消夜盘。常规连续交易时间，不含集合竞价、临时停市及到期日特殊规则。"
+    },
+    {
+      "id": "shfe-silver",
+      "name": "上期所 · 白银",
+      "code": "SHFE / AG",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "precious": true,
+      "china": true,
+      "color": "#B7C8E1",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "21:00",
+          "end": "02:30",
+          "night": true,
+          "days": "12345"
+        }
+      ],
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "note": "日盘含10:15—10:30休息及午休。夜盘按开始日判断，周五夜盘延续至周六；节前取消夜盘。常规连续交易时间，不含集合竞价、临时停市及到期日特殊规则。"
+    },
+    {
+      "id": "gfex",
+      "name": "广期所 · 铂 / 钯",
+      "code": "GFEX / PT · PD",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "precious": true,
+      "china": true,
+      "color": "#9EDBC7",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "night": false,
+          "days": "12345"
+        }
+      ],
+      "source": "https://www.gfex.com.cn/gfex/sspzb/sspz.shtml",
+      "note": "日盘三个小节；未配置夜盘。按铂/钯常规日盘，不包含临时调整。"
+    },
+    {
+      "id": "comex-gold",
+      "name": "COMEX · 黄金",
+      "code": "COMEX / GC",
+      "zone": "Central Standard Time",
+      "region": "美国",
+      "precious": true,
+      "china": false,
+      "color": "#E7A35E",
+      "sessions": [
+        {
+          "start": "17:00",
+          "end": "16:00",
+          "night": true,
+          "days": "01234"
+        }
+      ],
+      "source": "https://www.cmegroup.com/markets/metals/precious/gold.html",
+      "note": "标准100盎司GC合约。芝加哥时间周日—周四17:00开盘，次日16:00结束；每日维护16:00—17:00。自动夏令时。不适用于1盎司等24/7合约；未接入美国假日提前收盘。"
+    },
+    {
+      "id": "comex-silver",
+      "name": "COMEX · 白银",
+      "code": "COMEX / SI",
+      "zone": "Central Standard Time",
+      "region": "美国",
+      "precious": true,
+      "china": false,
+      "color": "#829FF1",
+      "sessions": [
+        {
+          "start": "17:00",
+          "end": "16:00",
+          "night": true,
+          "days": "01234"
+        }
+      ],
+      "source": "https://www.cmegroup.com/markets/metals/precious/silver.contract.html",
+      "note": "标准5000盎司SI合约。自动夏令时，每日维护16:00—17:00（芝加哥）。不适用于100盎司等24/7合约；假日与到期日需核对。"
+    },
+    {
+      "id": "jpx",
+      "name": "大阪交易所 · 标准黄金",
+      "code": "OSE / JPX",
+      "zone": "Tokyo Standard Time",
+      "region": "日本",
+      "precious": true,
+      "china": false,
+      "color": "#DF8DB9",
+      "sessions": [
+        {
+          "start": "08:45",
+          "end": "15:40",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "17:00",
+          "end": "05:55",
+          "night": true,
+          "days": "12345"
+        }
+      ],
+      "source": "https://www.jpx.co.jp/english/derivatives/rules/trading-hours/index.html",
+      "note": "按连续竞价时段：08:45—15:40、17:00—次日05:55。15:45/06:00为收盘集合竞价点，不画作连续交易。日本部分假日可交易，本版仅按常规周历。"
+    },
+    {
+      "id": "hkex",
+      "name": "港交所 · 黄金",
+      "code": "HKEX / 黄金",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "precious": true,
+      "china": false,
+      "color": "#73C1E9",
+      "sessions": [
+        {
+          "start": "08:30",
+          "end": "16:30",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "17:00",
+          "end": "03:00",
+          "night": true,
+          "days": "12345"
+        }
+      ],
+      "source": "https://www.hkex.com.hk/Services/Trading-hours-and-Severe-Weather-Arrangements/Trading-Hours/Derivatives-Market?sc_lang=en",
+      "note": "美元/离岸人民币贵金属期货；香港时间。非内地交易日历。最后交易日无夜盘，半日市12:30收盘；这些特殊日未自动纳入。"
+    },
+    {
+      "id": "mcx",
+      "name": "印度 MCX · 黄金",
+      "code": "MCX / GOLD",
+      "zone": "India Standard Time",
+      "region": "印度",
+      "precious": true,
+      "china": false,
+      "color": "#B695EE",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "23:30",
+          "night": false,
+          "days": "12345"
+        }
+      ],
+      "source": "https://www.mcxindia.com/faq/market-operations",
+      "note": "印度当地09:00开盘。美国夏令时期间23:30收盘，美国冬令时期间23:55收盘；按美国夏令时规则自动切换。印度节日及特别交易时段未纳入。"
+    },
+    {
+      "id": "sge",
+      "name": "上金所 · 黄金现货",
+      "code": "SGE / Au99.99",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "precious": true,
+      "china": true,
+      "color": "#CFA865",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "15:30",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "20:00",
+          "end": "02:30",
+          "night": true,
+          "days": "12345"
+        }
+      ],
+      "source": "https://www.sge.com.cn/h5_cpfw/xhsph_xq?cplx=7&parent_cplx=0&pro_id=793735093559758848",
+      "note": "这是现货市场，不是期货；单独标注供贵金属对照。仅Au99.99，不代表延期合约或其他产品。内地2026共同休市日期作为基础，特殊公告需核对。"
+    },
+    {
+      "id": "ine",
+      "name": "上期能源 · 原油",
+      "code": "INE / SC",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "precious": false,
+      "china": true,
+      "color": "#66BCBD",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "21:00",
+          "end": "02:30",
+          "night": true,
+          "days": "12345"
+        }
+      ],
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "note": "日盘含10:15—10:30休息及午休。夜盘按开始日判断，周五夜盘延续至周六；节前取消夜盘。常规连续交易时间，不含集合竞价、临时停市及到期日特殊规则。"
+    },
+    {
+      "id": "shfe-base",
+      "name": "上期所 · 有色金属",
+      "code": "SHFE / CU · AL 等",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "precious": false,
+      "china": true,
+      "color": "#75A8CA",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "21:00",
+          "end": "01:00",
+          "night": true,
+          "days": "12345"
+        }
+      ],
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "note": "日盘含10:15—10:30休息及午休。夜盘按开始日判断，周五夜盘延续至周六；节前取消夜盘。常规连续交易时间，不含集合竞价、临时停市及到期日特殊规则。本组适用铜、铝、锌、铅、镍、锡等夜盘至01:00的品种。"
+    },
+    {
+      "id": "shfe-steel",
+      "name": "上期所 · 螺纹 / 热卷",
+      "code": "SHFE / RB · HC",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "precious": false,
+      "china": true,
+      "color": "#CE927B",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "night": true,
+          "days": "12345"
+        }
+      ],
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "note": "日盘含10:15—10:30休息及午休。夜盘按开始日判断，周五夜盘延续至周六；节前取消夜盘。常规连续交易时间，不含集合竞价、临时停市及到期日特殊规则。"
+    },
+    {
+      "id": "dce",
+      "name": "大商所 · 豆粕",
+      "code": "DCE / M",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "precious": false,
+      "china": true,
+      "color": "#B7C67D",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "night": true,
+          "days": "12345"
+        }
+      ],
+      "source": "https://www.bocifco.com/newsinfo.aspx?cid=4&id=42064",
+      "note": "豆粕常规时段，非大商所全部品种统一时间。合约时间参考中银国际期货公布的合约表；大商所2019年月报确认夜盘缩短至23:00。日盘含10:15—10:30休息及午休。夜盘按开始日判断，周五夜盘延续至周六；节前取消夜盘。常规连续交易时间，不含集合竞价、临时停市及到期日特殊规则。"
+    },
+    {
+      "id": "czce",
+      "name": "郑商所 · PTA",
+      "code": "CZCE / TA",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "precious": false,
+      "china": true,
+      "color": "#D79BBA",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "night": true,
+          "days": "12345"
+        }
+      ],
+      "source": "https://www.czce.com.cn/cn/uploadfile/2022/08/31/20220831175708933.pdf",
+      "note": "PTA常规交易时段，非郑商所全部品种统一时间。日盘含10:15—10:30休息及午休。夜盘按开始日判断，周五夜盘延续至周六；节前取消夜盘。常规连续交易时间，不含集合竞价、临时停市及到期日特殊规则。"
+    },
+    {
+      "id": "cffex",
+      "name": "中金所 · 股指期货",
+      "code": "CFFEX / IF · IH · IC · IM",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "precious": false,
+      "china": true,
+      "color": "#75B9A6",
+      "sessions": [
+        {
+          "start": "09:30",
+          "end": "11:30",
+          "night": false,
+          "days": "12345"
+        },
+        {
+          "start": "13:00",
+          "end": "15:00",
+          "night": false,
+          "days": "12345"
+        }
+      ],
+      "source": "https://www.ciccwmf.cn/jyfkwt_5.jhtml",
+      "note": "股指期货常规连续交易；无夜盘。不代表国债期货（国债通常15:15收盘）。参考中金财富期货交易风控说明。"
+    },
+    {
+      "id": "lme",
+      "name": "伦敦金属 · 电子盘",
+      "code": "LMEselect / 工业金属",
+      "zone": "GMT Standard Time",
+      "region": "英国",
+      "precious": false,
+      "china": false,
+      "color": "#9AAED0",
+      "sessions": [
+        {
+          "start": "01:00",
+          "end": "19:00",
+          "night": false,
+          "days": "12345"
+        }
+      ],
+      "source": "https://www.lme.com/en/trading/trading-venues",
+      "note": "工业金属电子交易平台，不是伦敦场外黄金，也不代表圈内喊价或24小时电话交易。自动英国夏令时；英国休市日未纳入。"
+    }
+  ],
+  "holidays": [
+    "2026-01-01",
+    "2026-01-02",
+    "2026-01-03",
+    "2026-02-15",
+    "2026-02-16",
+    "2026-02-17",
+    "2026-02-18",
+    "2026-02-19",
+    "2026-02-20",
+    "2026-02-21",
+    "2026-02-22",
+    "2026-02-23",
+    "2026-04-04",
+    "2026-04-05",
+    "2026-04-06",
+    "2026-05-01",
+    "2026-05-02",
+    "2026-05-03",
+    "2026-05-04",
+    "2026-05-05",
+    "2026-06-19",
+    "2026-06-20",
+    "2026-06-21",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-27",
+    "2026-10-01",
+    "2026-10-02",
+    "2026-10-03",
+    "2026-10-04",
+    "2026-10-05",
+    "2026-10-06",
+    "2026-10-07"
+  ],
+  "catalog": [
+    {
+      "id": "cn-AU",
+      "product": "AU",
+      "exchange": "上期所",
+      "name": "黄金",
+      "code": "上期所 / AU",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": true,
+      "color": "#F2C66D",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "02:30",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-AG",
+      "product": "AG",
+      "exchange": "上期所",
+      "name": "白银",
+      "code": "上期所 / AG",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": true,
+      "color": "#73C1E9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "02:30",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-CU",
+      "product": "CU",
+      "exchange": "上期所",
+      "name": "铜",
+      "code": "上期所 / CU",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#9EDBC7",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "01:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-AL",
+      "product": "AL",
+      "exchange": "上期所",
+      "name": "铝",
+      "code": "上期所 / AL",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#DF8DB9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "01:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-ZN",
+      "product": "ZN",
+      "exchange": "上期所",
+      "name": "锌",
+      "code": "上期所 / ZN",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#B695EE",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "01:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-PB",
+      "product": "PB",
+      "exchange": "上期所",
+      "name": "铅",
+      "code": "上期所 / PB",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#E7A35E",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "01:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-NI",
+      "product": "NI",
+      "exchange": "上期所",
+      "name": "镍",
+      "code": "上期所 / NI",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#829FF1",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "01:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-SN",
+      "product": "SN",
+      "exchange": "上期所",
+      "name": "锡",
+      "code": "上期所 / SN",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#F2C66D",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "01:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-AO",
+      "product": "AO",
+      "exchange": "上期所",
+      "name": "氧化铝",
+      "code": "上期所 / AO",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#73C1E9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "01:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-AD",
+      "product": "AD",
+      "exchange": "上期所",
+      "name": "铸造铝合金",
+      "code": "上期所 / AD",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#9EDBC7",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "01:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-SS",
+      "product": "SS",
+      "exchange": "上期所",
+      "name": "不锈钢",
+      "code": "上期所 / SS",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#DF8DB9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "01:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-RB",
+      "product": "RB",
+      "exchange": "上期所",
+      "name": "螺纹钢",
+      "code": "上期所 / RB",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#B695EE",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-HC",
+      "product": "HC",
+      "exchange": "上期所",
+      "name": "热轧卷板",
+      "code": "上期所 / HC",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#E7A35E",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-FU",
+      "product": "FU",
+      "exchange": "上期所",
+      "name": "燃料油",
+      "code": "上期所 / FU",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#829FF1",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-BU",
+      "product": "BU",
+      "exchange": "上期所",
+      "name": "石油沥青",
+      "code": "上期所 / BU",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#F2C66D",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-BR",
+      "product": "BR",
+      "exchange": "上期所",
+      "name": "丁二烯橡胶",
+      "code": "上期所 / BR",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#73C1E9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-RU",
+      "product": "RU",
+      "exchange": "上期所",
+      "name": "天然橡胶",
+      "code": "上期所 / RU",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#9EDBC7",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-SP",
+      "product": "SP",
+      "exchange": "上期所",
+      "name": "纸浆",
+      "code": "上期所 / SP",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#DF8DB9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-OP",
+      "product": "OP",
+      "exchange": "上期所",
+      "name": "胶版印刷纸",
+      "code": "上期所 / OP",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#B695EE",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-WR",
+      "product": "WR",
+      "exchange": "上期所",
+      "name": "线材",
+      "code": "上期所 / WR",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#E7A35E",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-SC",
+      "product": "SC",
+      "exchange": "上期能源",
+      "name": "原油",
+      "code": "上期能源 / SC",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#829FF1",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "02:30",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-BC",
+      "product": "BC",
+      "exchange": "上期能源",
+      "name": "国际铜",
+      "code": "上期能源 / BC",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#F2C66D",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "01:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-LU",
+      "product": "LU",
+      "exchange": "上期能源",
+      "name": "低硫燃料油",
+      "code": "上期能源 / LU",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#73C1E9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-NR",
+      "product": "NR",
+      "exchange": "上期能源",
+      "name": "20号胶",
+      "code": "上期能源 / NR",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#9EDBC7",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-EC",
+      "product": "EC",
+      "exchange": "上期能源",
+      "name": "集运指数（欧线）",
+      "code": "上期能源 / EC",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#DF8DB9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.shfe.com.cn/services/calenderandholidays/tradinghours/",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-A",
+      "product": "A",
+      "exchange": "大商所",
+      "name": "黄大豆1号",
+      "code": "大商所 / A",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#B695EE",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-B",
+      "product": "B",
+      "exchange": "大商所",
+      "name": "黄大豆2号",
+      "code": "大商所 / B",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#E7A35E",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-C",
+      "product": "C",
+      "exchange": "大商所",
+      "name": "玉米",
+      "code": "大商所 / C",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#829FF1",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-CS",
+      "product": "CS",
+      "exchange": "大商所",
+      "name": "玉米淀粉",
+      "code": "大商所 / CS",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#F2C66D",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-M",
+      "product": "M",
+      "exchange": "大商所",
+      "name": "豆粕",
+      "code": "大商所 / M",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#73C1E9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-Y",
+      "product": "Y",
+      "exchange": "大商所",
+      "name": "豆油",
+      "code": "大商所 / Y",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#9EDBC7",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-P",
+      "product": "P",
+      "exchange": "大商所",
+      "name": "棕榈油",
+      "code": "大商所 / P",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#DF8DB9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-RR",
+      "product": "RR",
+      "exchange": "大商所",
+      "name": "粳米",
+      "code": "大商所 / RR",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#B695EE",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-L",
+      "product": "L",
+      "exchange": "大商所",
+      "name": "聚乙烯",
+      "code": "大商所 / L",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#E7A35E",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-V",
+      "product": "V",
+      "exchange": "大商所",
+      "name": "聚氯乙烯",
+      "code": "大商所 / V",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#829FF1",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-PP",
+      "product": "PP",
+      "exchange": "大商所",
+      "name": "聚丙烯",
+      "code": "大商所 / PP",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#F2C66D",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-J",
+      "product": "J",
+      "exchange": "大商所",
+      "name": "焦炭",
+      "code": "大商所 / J",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#73C1E9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-JM",
+      "product": "JM",
+      "exchange": "大商所",
+      "name": "焦煤",
+      "code": "大商所 / JM",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#9EDBC7",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-I",
+      "product": "I",
+      "exchange": "大商所",
+      "name": "铁矿石",
+      "code": "大商所 / I",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#DF8DB9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-EG",
+      "product": "EG",
+      "exchange": "大商所",
+      "name": "乙二醇",
+      "code": "大商所 / EG",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#B695EE",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-EB",
+      "product": "EB",
+      "exchange": "大商所",
+      "name": "苯乙烯",
+      "code": "大商所 / EB",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#E7A35E",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-PG",
+      "product": "PG",
+      "exchange": "大商所",
+      "name": "液化石油气",
+      "code": "大商所 / PG",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#829FF1",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-BZ",
+      "product": "BZ",
+      "exchange": "大商所",
+      "name": "纯苯",
+      "code": "大商所 / BZ",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#F2C66D",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-L-F",
+      "product": "L-F",
+      "exchange": "大商所",
+      "name": "聚乙烯月均价",
+      "code": "大商所 / L-F",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#73C1E9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-V-F",
+      "product": "V-F",
+      "exchange": "大商所",
+      "name": "聚氯乙烯月均价",
+      "code": "大商所 / V-F",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#9EDBC7",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-PP-F",
+      "product": "PP-F",
+      "exchange": "大商所",
+      "name": "聚丙烯月均价",
+      "code": "大商所 / PP-F",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#DF8DB9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-FB",
+      "product": "FB",
+      "exchange": "大商所",
+      "name": "纤维板",
+      "code": "大商所 / FB",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#B695EE",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-BB",
+      "product": "BB",
+      "exchange": "大商所",
+      "name": "胶合板",
+      "code": "大商所 / BB",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#E7A35E",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-JD",
+      "product": "JD",
+      "exchange": "大商所",
+      "name": "鸡蛋",
+      "code": "大商所 / JD",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#829FF1",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-LH",
+      "product": "LH",
+      "exchange": "大商所",
+      "name": "生猪",
+      "code": "大商所 / LH",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#F2C66D",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-LG",
+      "product": "LG",
+      "exchange": "大商所",
+      "name": "原木",
+      "code": "大商所 / LG",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#73C1E9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-CF",
+      "product": "CF",
+      "exchange": "郑商所",
+      "name": "棉花",
+      "code": "郑商所 / CF",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#9EDBC7",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-CY",
+      "product": "CY",
+      "exchange": "郑商所",
+      "name": "棉纱",
+      "code": "郑商所 / CY",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#DF8DB9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-PF",
+      "product": "PF",
+      "exchange": "郑商所",
+      "name": "短纤",
+      "code": "郑商所 / PF",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#B695EE",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-PX",
+      "product": "PX",
+      "exchange": "郑商所",
+      "name": "对二甲苯",
+      "code": "郑商所 / PX",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#E7A35E",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-TA",
+      "product": "TA",
+      "exchange": "郑商所",
+      "name": "PTA",
+      "code": "郑商所 / TA",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#829FF1",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-MA",
+      "product": "MA",
+      "exchange": "郑商所",
+      "name": "甲醇",
+      "code": "郑商所 / MA",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#F2C66D",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-OI",
+      "product": "OI",
+      "exchange": "郑商所",
+      "name": "菜籽油",
+      "code": "郑商所 / OI",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#73C1E9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-RM",
+      "product": "RM",
+      "exchange": "郑商所",
+      "name": "菜籽粕",
+      "code": "郑商所 / RM",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#9EDBC7",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-SR",
+      "product": "SR",
+      "exchange": "郑商所",
+      "name": "白糖",
+      "code": "郑商所 / SR",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#DF8DB9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-PR",
+      "product": "PR",
+      "exchange": "郑商所",
+      "name": "瓶片",
+      "code": "郑商所 / PR",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#B695EE",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-FG",
+      "product": "FG",
+      "exchange": "郑商所",
+      "name": "玻璃",
+      "code": "郑商所 / FG",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#E7A35E",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-PL",
+      "product": "PL",
+      "exchange": "郑商所",
+      "name": "丙烯",
+      "code": "郑商所 / PL",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#829FF1",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-SA",
+      "product": "SA",
+      "exchange": "郑商所",
+      "name": "纯碱",
+      "code": "郑商所 / SA",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#F2C66D",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-SH",
+      "product": "SH",
+      "exchange": "郑商所",
+      "name": "烧碱",
+      "code": "郑商所 / SH",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#73C1E9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-ZC",
+      "product": "ZC",
+      "exchange": "郑商所",
+      "name": "动力煤",
+      "code": "郑商所 / ZC",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#9EDBC7",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。夜盘按开始日期显示，节前停夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "21:00",
+          "end": "23:00",
+          "days": "12345",
+          "night": true
+        }
+      ]
+    },
+    {
+      "id": "cn-CJ",
+      "product": "CJ",
+      "exchange": "郑商所",
+      "name": "红枣",
+      "code": "郑商所 / CJ",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#DF8DB9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-PK",
+      "product": "PK",
+      "exchange": "郑商所",
+      "name": "花生",
+      "code": "郑商所 / PK",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#B695EE",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-SF",
+      "product": "SF",
+      "exchange": "郑商所",
+      "name": "硅铁",
+      "code": "郑商所 / SF",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#E7A35E",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-SM",
+      "product": "SM",
+      "exchange": "郑商所",
+      "name": "锰硅",
+      "code": "郑商所 / SM",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#829FF1",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-AP",
+      "product": "AP",
+      "exchange": "郑商所",
+      "name": "苹果",
+      "code": "郑商所 / AP",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#F2C66D",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-RS",
+      "product": "RS",
+      "exchange": "郑商所",
+      "name": "油菜籽",
+      "code": "郑商所 / RS",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#73C1E9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-JR",
+      "product": "JR",
+      "exchange": "郑商所",
+      "name": "粳稻",
+      "code": "郑商所 / JR",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#9EDBC7",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-LR",
+      "product": "LR",
+      "exchange": "郑商所",
+      "name": "晚籼稻",
+      "code": "郑商所 / LR",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#DF8DB9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-RI",
+      "product": "RI",
+      "exchange": "郑商所",
+      "name": "早籼稻",
+      "code": "郑商所 / RI",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#B695EE",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-UR",
+      "product": "UR",
+      "exchange": "郑商所",
+      "name": "尿素",
+      "code": "郑商所 / UR",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#E7A35E",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-WH",
+      "product": "WH",
+      "exchange": "郑商所",
+      "name": "强麦",
+      "code": "郑商所 / WH",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#829FF1",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-PM",
+      "product": "PM",
+      "exchange": "郑商所",
+      "name": "普麦",
+      "code": "郑商所 / PM",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#F2C66D",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cjfco.com.cn/main/customerservice/tradingguide/jyxz/index.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-SI",
+      "product": "SI",
+      "exchange": "广期所",
+      "name": "工业硅",
+      "code": "广期所 / SI",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#73C1E9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.gfex.com.cn/gfex/sspzb/sspz.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-LC",
+      "product": "LC",
+      "exchange": "广期所",
+      "name": "碳酸锂",
+      "code": "广期所 / LC",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#9EDBC7",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.gfex.com.cn/gfex/sspzb/sspz.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-PS",
+      "product": "PS",
+      "exchange": "广期所",
+      "name": "多晶硅",
+      "code": "广期所 / PS",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#DF8DB9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.gfex.com.cn/gfex/sspzb/sspz.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-PT",
+      "product": "PT",
+      "exchange": "广期所",
+      "name": "铂",
+      "code": "广期所 / PT",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": true,
+      "color": "#B695EE",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.gfex.com.cn/gfex/sspzb/sspz.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-PD",
+      "product": "PD",
+      "exchange": "广期所",
+      "name": "钯",
+      "code": "广期所 / PD",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": true,
+      "color": "#E7A35E",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.gfex.com.cn/gfex/sspzb/sspz.shtml",
+      "sessions": [
+        {
+          "start": "09:00",
+          "end": "10:15",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "10:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-IF",
+      "product": "IF",
+      "exchange": "中金所",
+      "name": "沪深300",
+      "code": "中金所 / IF",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#829FF1",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cffex.com.cn/",
+      "sessions": [
+        {
+          "start": "09:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:00",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-IH",
+      "product": "IH",
+      "exchange": "中金所",
+      "name": "上证50",
+      "code": "中金所 / IH",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#F2C66D",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cffex.com.cn/",
+      "sessions": [
+        {
+          "start": "09:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:00",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-IC",
+      "product": "IC",
+      "exchange": "中金所",
+      "name": "中证500",
+      "code": "中金所 / IC",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#73C1E9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cffex.com.cn/",
+      "sessions": [
+        {
+          "start": "09:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:00",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-IM",
+      "product": "IM",
+      "exchange": "中金所",
+      "name": "中证1000",
+      "code": "中金所 / IM",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#9EDBC7",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cffex.com.cn/",
+      "sessions": [
+        {
+          "start": "09:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:00",
+          "end": "15:00",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-TS",
+      "product": "TS",
+      "exchange": "中金所",
+      "name": "2年期国债",
+      "code": "中金所 / TS",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#DF8DB9",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cffex.com.cn/",
+      "sessions": [
+        {
+          "start": "09:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:00",
+          "end": "15:15",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-TF",
+      "product": "TF",
+      "exchange": "中金所",
+      "name": "5年期国债",
+      "code": "中金所 / TF",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#B695EE",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cffex.com.cn/",
+      "sessions": [
+        {
+          "start": "09:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:00",
+          "end": "15:15",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-T",
+      "product": "T",
+      "exchange": "中金所",
+      "name": "10年期国债",
+      "code": "中金所 / T",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#E7A35E",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cffex.com.cn/",
+      "sessions": [
+        {
+          "start": "09:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:00",
+          "end": "15:15",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    },
+    {
+      "id": "cn-TL",
+      "product": "TL",
+      "exchange": "中金所",
+      "name": "30年期国债",
+      "code": "中金所 / TL",
+      "zone": "China Standard Time",
+      "region": "中国",
+      "china": true,
+      "precious": false,
+      "color": "#829FF1",
+      "note": "常规连续交易时段，不含集合竞价、临时调整和合约最后交易日特殊安排。无夜盘。",
+      "source": "https://www.cffex.com.cn/",
+      "sessions": [
+        {
+          "start": "09:30",
+          "end": "11:30",
+          "days": "12345",
+          "night": false
+        },
+        {
+          "start": "13:00",
+          "end": "15:15",
+          "days": "12345",
+          "night": false
+        }
+      ]
+    }
+  ]
+}
