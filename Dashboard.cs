@@ -97,9 +97,9 @@ public partial class Clock {
   float band=compact?11:15,step=compact?14:19;
   for(int i=0;i<ms.Count;i++){
    float rr=r-i*step;var m=ms[i];using(var pen=new Pen(Color.FromArgb(25,42,60),band))g.DrawEllipse(pen,cx-rr,cy-rr,rr*2,rr*2);
-   foreach(var span in MarketView.Project(Engine.Intervals(m,now),now,DisplayZone)){
+   foreach(var span in MarketView.ProjectStatus(Engine.Intervals(m,now),now,DisplayZone)){
     double a=span.Start,b=span.End;if(b<=a)continue;
-    using(var pen=new Pen(MC(m),band))g.DrawArc(pen,cx-rr,cy-rr,rr*2,rr*2,(float)DialAngle(a,minute,pref.rotate),(float)((b-a)/4));
+    using(var pen=new Pen(span.Ended?Color.FromArgb(112,118,128):MC(m),band))g.DrawArc(pen,cx-rr,cy-rr,rr*2,rr*2,(float)DialAngle(a,minute,pref.rotate),(float)((b-a)/4));
     string label=String.IsNullOrEmpty(m.product)?m.name:m.product;
     if(!compact)ArcLabel(g,label,cx,cy,rr,DialAngle(a,minute,pref.rotate),(b-a)/4,band);
    }
@@ -110,7 +110,8 @@ public partial class Clock {
   var tip=Polar(cx,cy,r+39,needle);using(var brush=new SolidBrush(gold))g.FillEllipse(brush,tip.X-4,tip.Y-4,8,8);
   Center(g,ZoneLabel(now),compact?9:10,muted,cx,cy-21);Center(g,local.ToString("HH:mm:ss"),compact?17:22,Color.White,cx,cy+3);
   Center(g,pref.rotate?"NOW · 固定基准":"24H · 今日时段",compact?7:8,gold,cx,cy+30);
-  if(!compact){Center(g,pref.rotate?"表盘随时间旋转 · 顶部金线为当前时刻":"固定表盘 · 金线随当前时间移动",10,Color.White,cx,620);}
+  Center(g,"灰色：已结束  ·  彩色：交易中 / 待开市",compact?8:9,muted,cx,compact?507:610);
+  if(!compact){Center(g,pref.rotate?"表盘随时间旋转 · 顶部金线为当前时刻":"固定表盘 · 金线随当前时间移动",10,Color.White,cx,630);}
  }
  void ArcLabel(Graphics g,string text,float cx,float cy,float r,double start,double sweep,float band){
   double available=r*sweep*Math.PI/180-14;if(available<24)return;
@@ -141,7 +142,8 @@ public partial class Clock {
   float top=178;
   TextAt(g,"今日时间轴 · "+ZoneLabel(now),12,Color.White,x,128,true);
   for(int h=0;h<=24;h+=3){float xx=x+w*h/24;Line(g,Color.FromArgb(36,53,73),1,new PointF(xx,top),new PointF(xx,top+420));Center(g,h.ToString("00"),8,muted,xx,top-15);}
-  for(int i=0;i<ms.Count;i++){float y=top+i*58;var m=ms[i];TextAt(g,m.name,9,MC(m),x,y);Box(g,x,y+24,w,15,panel);foreach(var span in MarketView.Project(Engine.Intervals(m,now),now,DisplayZone)){double a=span.Start,b=span.End;if(b>a)Box(g,x+(float)a/1440*w,y+24,(float)(b-a)/1440*w,15,MC(m));}}
+  for(int i=0;i<ms.Count;i++){float y=top+i*58;var m=ms[i];TextAt(g,m.name,9,MC(m),x,y);Box(g,x,y+24,w,15,panel);foreach(var span in MarketView.ProjectStatus(Engine.Intervals(m,now),now,DisplayZone)){double a=span.Start,b=span.End;if(b>a)Box(g,x+(float)a/1440*w,y+24,(float)(b-a)/1440*w,15,span.Ended?Color.FromArgb(112,118,128):MC(m));}}
+  TextAt(g,"灰色：已结束  ·  彩色：交易中 / 待开市",9,muted,x,610);
   float current=x+(float)DisplayTime(now).TimeOfDay.TotalMinutes/1440*w;Line(g,gold,2,new PointF(current,top),new PointF(current,top+420));
  }
  void DrawQuotes(Graphics g,float y,float width,bool future){
@@ -166,3 +168,5 @@ public partial class Clock {
  public void UseQuoteSnapshot(List<IndexQuote> snapshot){quotes=snapshot;lastQuoteFetch=DateTime.UtcNow;quoteStatus="实际接口快照";}
  public void RenderPreview(string path,bool compact,bool cards,bool indexes,bool axis,DateTime utc){OfflinePreview=true;PreviewTime=utc;pref.compact=compact;pref.cards=cards;pref.quotes=indexes;timeline=axis;ApplySize();CreateControl();PerformLayout();using(var bitmap=new Bitmap(canvas.Width,canvas.Height)){using(var g=Graphics.FromImage(bitmap))PaintClock(canvas,new PaintEventArgs(g,new Rectangle(0,0,bitmap.Width,bitmap.Height)));bitmap.Save(path,System.Drawing.Imaging.ImageFormat.Png);}}
 }
+
+

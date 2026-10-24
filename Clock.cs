@@ -44,7 +44,7 @@ public partial class Clock:Form {
  Color bg=Color.FromArgb(12,19,31),panel=Color.FromArgb(20,31,47),muted=Color.FromArgb(141,160,181),gold=Color.FromArgb(240,190,91);
  Surface canvas=new Surface(); FlowLayoutPanel bar=new FlowLayoutPanel(); ComboBox filter=new ComboBox(); Button paging,mode,choose; NotifyIcon tray; Timer timer=new Timer(); Pref pref=new Pref(); int page=0; bool timeline=false; string home=AppDomain.CurrentDomain.BaseDirectory; List<Tuple<Rectangle,Market>> hits=new List<Tuple<Rectangle,Market>>();
  public Clock(){
-  Text="全球期货交易时钟 · v1.4"; Font=new Font("Microsoft YaHei UI",9); BackColor=bg;ForeColor=Color.White;AutoScaleMode=AutoScaleMode.None;MinimumSize=new Size(480,570);Size=new Size(1120,780);StartPosition=FormStartPosition.Manual;
+  Text="全球期货交易时钟 · v1.4.1"; Font=new Font("Microsoft YaHei UI",9); BackColor=bg;ForeColor=Color.White;AutoScaleMode=AutoScaleMode.None;MinimumSize=new Size(480,570);Size=new Size(1120,780);StartPosition=FormStartPosition.Manual;
   try{pref=new JavaScriptSerializer().Deserialize<Pref>(File.ReadAllText(Path.Combine(home,"settings.json")));}catch{}
   if(pref==null)pref=new Pref(); timeline=pref.timeline; if(pref.selected==null)pref.selected=new string[]{"AU","AG","JM","LC","LH","PX","IM","IC"};
   Location=new Point(pref.x,pref.y);if(!Screen.AllScreens.Any(s=>s.WorkingArea.IntersectsWith(Bounds)))Location=new Point(50,50); TopMost=pref.top;
@@ -112,3 +112,4 @@ public static class Program {
  var bond=Engine.data.catalog.First(m=>m.product=="TL");var index=Engine.data.catalog.First(m=>m.product=="IM");var instant=DateTime.Parse("2026-10-22T07:05:00Z").ToUniversalTime();if(!Engine.Open(bond,instant)||Engine.Open(index,instant))throw new Exception("国债股指收盘区别错误");lines.Add("PASS 国债15:15与股指15:00收盘");
 File.WriteAllLines(Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"test-results.txt"),lines);}
 }
+

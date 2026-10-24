@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-public class ClockSlice { public double Start,End; }
+public class ClockSlice { public double Start,End; public bool Ended; }
 public static class MarketView {
  // Project UTC intervals onto a local civil day. Split at offset changes so
  // spring-forward gaps and repeated fall-back hours do not stretch the dial.
@@ -21,5 +21,12 @@ public static class MarketView {
   var result=new List<ClockSlice>();foreach(var p in pieces.OrderBy(v=>v.Start)){if(result.Count>0&&p.Start<=result[result.Count-1].End+0.0001)result[result.Count-1].End=Math.Max(result[result.Count-1].End,p.End);else result.Add(p);}return result;
  }
  public static string Format(double minutes){return minutes>=1440?"24:00":TimeSpan.FromMinutes(minutes).ToString(@"hh\:mm");}
+ // Classify by the real UTC session end, before clipping to the display day.
+ // This preserves overnight sessions and DST repeated hours correctly.
+ public static List<ClockSlice> ProjectStatus(IEnumerable<Span> spans,DateTime utc,TimeZoneInfo zone){
+  var sessions=spans.ToList();var ended=Project(sessions.Where(s=>s.end<=utc),utc,zone);
+  foreach(var slice in ended)slice.Ended=true;
+  ended.AddRange(Project(sessions.Where(s=>s.end>utc),utc,zone));return ended;
+ }
  public static string Today(Market market,DateTime utc,TimeZoneInfo zone){return String.Join("  /  ",Project(Engine.Intervals(market,utc),utc,zone).Select(s=>Format(s.Start)+"–"+Format(s.End)).ToArray());}
 }

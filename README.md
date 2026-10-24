@@ -1,10 +1,15 @@
-# 全球期货交易时钟 v1.4
+# 全球期货交易时钟 v1.4.1
 
-[下载 Windows v1.4](https://github.com/Domokira/GlobalFuturesClock/releases/download/v1.4/GlobalFuturesClock-v1.4-windows.zip)
+[下载 Windows v1.4.1](https://github.com/Domokira/GlobalFuturesClock/releases/download/v1.4.1/GlobalFuturesClock-v1.4.1-windows.zip)
 
 双击同目录的“全球期货交易时钟.exe”运行。先退出已运行的旧版本；程序保留单实例限制。markets.json 需与程序同目录。
 
-## 这版修改
+## v1.4.1 更新
+- 表盘和时间轴中的已结束交易时段显示灰色；正在交易和尚未开始的时段保留品种颜色。以实际交易区间结束时间判断，支持跨午夜夜盘。
+- 加入灰色/彩色图例。周末无交易时段时不画交易色带。
+- 已验证周六夜盘收盘边界、周日全部107个市场/品种无时段，以及原21项交易规则。
+
+## v1.4 修改
 - 时区联动：顶部时间、24小时表盘刻度、中心时钟、当日交易色带、时间轴、交易卡片及详情中的当日时段统一跟随所选时区。
 - 支持北京、东京、伦敦、纽约、UTC。按所选地区的自然日裁切交易区间，处理夏令时跳过与重复小时。
 - 固定 NOW 金线模式下，当前时刻始终在顶部；同一真实交易时段相对 NOW 的角度可能保持不变，但刻度与日期边界会随时区变化。
@@ -48,3 +53,4 @@ NTP启动时、每30分钟自动同步，也可手动校时，仅校正应用时
 - Validation.cs、Validation14.cs：独立验证入口，测试记录随程序包提供。
 
 ![v1.4联网快照预览](运行预览.png)
+
