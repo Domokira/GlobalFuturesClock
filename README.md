@@ -1,5 +1,12 @@
 # 全球期货交易时钟 v1.4.1
 
+## Android v1.4.1-android.1
+
+[下载 Android APK](https://github.com/Domokira/GlobalFuturesClock/raw/refs/heads/main/downloads/GlobalFuturesClock-v1.4.1-android.1.apk) · [Android 源码包](https://github.com/Domokira/GlobalFuturesClock/raw/refs/heads/main/downloads/GlobalFuturesClock-v1.4.1-android.1-source.zip) · [功能与安装说明](android/README.md)
+
+支持 Android 8.0 及以上，测试签名。包含旋转表盘、时区、自选、已结束时段灰度、行情与NTP。标准构建、8项单元测试、静态检查和签名验证通过；尚未完成真机验证。
+
+
 [下载 Windows v1.4.1](https://github.com/Domokira/GlobalFuturesClock/releases/download/v1.4.1/GlobalFuturesClock-v1.4.1-windows.zip)
 
 双击同目录的“全球期货交易时钟.exe”运行。先退出已运行的旧版本；程序保留单实例限制。markets.json 需与程序同目录。

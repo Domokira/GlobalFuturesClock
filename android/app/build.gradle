@@ -1,0 +1,18 @@
+plugins { id 'com.android.application' }
+android {
+    useLibrary 'android.test.runner', false
+    useLibrary 'android.test.base', false
+    namespace 'com.domokira.clock'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'com.domokira.clock'
+        minSdk 26
+        targetSdk 35
+        versionCode 14101
+        versionName '1.4.1-android.1'
+        testInstrumentationRunner 'android.test.InstrumentationTestRunner'
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    testOptions { unitTests.returnDefaultValues = true }
+}
+dependencies { testImplementation 'junit:junit:4.13.2'; testImplementation 'org.json:json:20240303' }
