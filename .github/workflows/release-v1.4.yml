@@ -1,0 +1,44 @@
+name: v1.4
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/release-v1.4.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: release-v1.4
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: windows-2022
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and verify
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          & ./build.ps1
+          $app = Join-Path $PWD '全球期货交易时钟.exe'
+          $process = Start-Process -FilePath $app -ArgumentList '--test' -Wait -PassThru
+          if ($process.ExitCode -ne 0) { throw 'Trading-hours checks failed' }
+          $stage = Join-Path $env:RUNNER_TEMP 'GlobalFuturesClock-v1.4-windows'
+          New-Item -ItemType Directory -Path $stage -Force | Out-Null
+          $files = @('全球期货交易时钟.exe','Clock.cs','Dashboard.cs','Services.cs','MarketView.cs','LiveFeed.cs','Validation.cs','Validation14.cs','build.ps1','markets.json','README.md','CHANGELOG.md','test-results.txt','国内品种目录.md','运行预览.png')
+          foreach ($file in $files) { Copy-Item -LiteralPath $file -Destination $stage }
+          Compress-Archive -LiteralPath $stage -DestinationPath (Join-Path $env:RUNNER_TEMP 'GlobalFuturesClock-v1.4-windows.zip') -Force
+      - name: Publish v1.4
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $archive = Join-Path $env:RUNNER_TEMP 'GlobalFuturesClock-v1.4-windows.zip'
+          $notes = Join-Path $env:RUNNER_TEMP 'release-notes.md'
+          '改动与使用说明见 [README](https://github.com/Domokira/GlobalFuturesClock/blob/v1.4/README.md)。' | Set-Content -LiteralPath $notes -Encoding utf8
+          gh release create v1.4 $archive --repo $env:GITHUB_REPOSITORY --target $env:GITHUB_SHA --title v1.4 --notes-file $notes --draft
+          if ($LASTEXITCODE -ne 0) { throw 'Release creation failed' }
+          gh release edit v1.4 --repo $env:GITHUB_REPOSITORY --draft=false --latest
+          if ($LASTEXITCODE -ne 0) { throw 'Release publication failed' }
